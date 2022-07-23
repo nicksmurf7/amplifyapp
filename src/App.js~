@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'; 
 import './App.css'; import { API } from 'aws-amplify'; 
 import { withAuthenticator } from '@aws-amplify/ui-react'; 
-import { listNotes } from './src/graphql/queries.js'; 
-import { createNote as createNoteMutation, deleteNote as deleteNoteMutation } from './src/graphql/mutations.js';
+import { listNotes } from 'src/graphql/queries.js'; 
+import { createNote as createNoteMutation, deleteNote as deleteNoteMutation } from 'src/graphql/mutations.js';
 
 const initialFormState = { name: '', description: '' }
 
